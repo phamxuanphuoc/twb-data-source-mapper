@@ -25,29 +25,8 @@
           turn off your wifi/internet after loading this page and it will still
           work.
           <br /> <br />
-          Take a look at the
-          <a
-            href="https://glitch.com/edit/#!/twb-data-source-mapper?path=script.js"
-            target="_blank"
-            >source code</a
-          >
-          or read my
-          <a
-            href="https://sliceofkeesh.com/post/tableau-data-source-mapper"
-            target="_blank"
-            >blog post</a
-          >
-          to learn more. <br /><br />
-          <b
-            >Found this useful? I don't collect any data on this page, even
-            analytics, so
-            <a href="mailto:keshia@sliceofkeesh.com" target="_blank"
-              >drop me a line</a
-            >
-            and let
-            <a href="https://twitter.com/KroseKeshia" target="_blank">me</a>
-            know! 🙂</b
-          >
+          This tool was created by Keshia. Thank you !
+          <br /><br />
         </p>
         <div class="block" v-cloak>
           <div class="file has-name is-fullwidth">
@@ -88,7 +67,7 @@
             <p class="sheet" v-for="sheet in dataSource.sheets">
               <img
                 class="tabicon"
-                :src="'https://cdn.glitch.global/945b8f26-7039-4242-b7b8-583646c92829/' + sheet.type + '.png'"
+                :src="'./assets/' + sheet.type + '.png'"
               />{{sheet.name}}
             </p>
           </div>
@@ -104,7 +83,7 @@
               <p :title="field.calc">
                 <img
                   class="tabicon"
-                  :src="'https://cdn.glitch.global/945b8f26-7039-4242-b7b8-583646c92829/' + field.type + '.png'"
+                  :src="'./assets/' + field.type + '.png'"
                 />{{field.name}}
               </p>
               <span v-if="showSheets">
